@@ -10,6 +10,9 @@ import MoneyBackGuarantee from "../components/sections/footer/MoneyBackGuarantee
 import PaperWritingService from "../components/sections/footer/PaperWritingService";
 import PlagiarismFreeGuarantee from "../components/sections/footer/PlagiarismFreeGuarantee";
 import PrivacyPolicy from "../components/sections/footer/PrivacyPolicy";
+import ScholarshipProgram from "../components/sections/footer/ScholarshipProgram";
+import TermsAndConditions from "../components/sections/footer/TermsAndConditions";
+import RevisionPolicy from "../components/sections/footer/RevisionPolicy";
 
 Vue.use(VueRouter);
 
@@ -58,6 +61,21 @@ const routes = [{
         name: "PrivacyPolicy",
         component: PrivacyPolicy
     },
+    {
+        path: "/scholarship-program",
+        name: "ScholarshipProgram",
+        component: ScholarshipProgram
+    },
+    {
+        path: "/terms-and-conditions",
+        name: "TermsAndConditions",
+        component: TermsAndConditions
+    },
+    {
+        path: "/revision-policy",
+        name: "RevisionPolicy",
+        component: RevisionPolicy
+    }
 ];
 
 const router = new VueRouter({
