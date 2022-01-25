@@ -72,21 +72,21 @@
         </div>
         <div class="col-md-4">
           <ul>
-            <li>Money Back Guarantee</li>
-            <li>Plagiarism-free Guarantee</li>
-            <li>Privacy Policy</li>
-            <li>Revision Policy</li>
-            <li>Terms and Conditions</li>
-            <li>Cookie Policy</li>
+            <li><a href="/#/money-back-guarantee">Money Back Guarantee</a></li>
+            <li><a href="/#/plagiarism-free-guarantee">Plagiarism-free Guarantee</a></li>
+            <li><a href="/#/privacy-policy">Privacy Policy</a></li>
+            <li><a href="/#/revision-policy">Revision Policy</a></li>
+            <li><a href="/#/terms-and-conditions">Terms and Conditions</a></li>
+            <li><a href="/#/cookie-policy">Cookie Policy</a></li>
           </ul>
         </div>
         <div class="col-md-4">
           <ul class="text-muted">
-            <li>Paper writing Service</li>
-            <li>Buy Essay</li>
-            <li>Essay Help</li>
-            <li>Buy Research Papers</li>
-            <li>Scholarship Program</li>
+            <li><a href="/#/paper-writing-service">Paper writing Service</a></li>
+            <li><a href="/#/buy-essay">Buy Essay</a></li>
+            <li><a href="/#/essay-help">Essay Help</a></li>
+            <li><a href="/#/buy-research-papers">Buy Research Papers</a></li>
+            <li><a href="/#/scholarship-program">Scholarship Program</a></li>
           </ul>
         </div>
       </div>
