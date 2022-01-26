@@ -13,6 +13,9 @@ import PrivacyPolicy from "../components/sections/footer/PrivacyPolicy";
 import ScholarshipProgram from "../components/sections/footer/ScholarshipProgram";
 import TermsAndConditions from "../components/sections/footer/TermsAndConditions";
 import RevisionPolicy from "../components/sections/footer/RevisionPolicy";
+import Prices from "../components/sections/sidenavigation/Prices";
+import Faq from "../components/sections/sidenavigation/Faq";
+import Contacts from "../components/sections/sidenavigation/Contacts";
 
 Vue.use(VueRouter);
 
@@ -75,6 +78,21 @@ const routes = [{
         path: "/revision-policy",
         name: "RevisionPolicy",
         component: RevisionPolicy
+    },
+    {
+        path: "/prices",
+        name: "Prices",
+        component: Prices
+    },
+    {
+        path: "/faq",
+        name: "Faq",
+        component: Faq
+    },
+    {
+        path: "/contacts",
+        name: "Contacts",
+        component: Contacts
     }
 ];
 
