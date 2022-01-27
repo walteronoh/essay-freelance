@@ -37,21 +37,40 @@
                 <div class="d-flex">
                   <p>Pages:</p>
                   <div class="d-flex">
-                    <button class="btn btn-primary btn-sm" type="button">-</button>
-                    <input class="form-control" type="number" value="1" />
-                    <button class="btn btn-primary btn-sm" type="button">+</button>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      type="button"
+                      @click="reducePages(pages)"
+                    >
+                      -
+                    </button>
+                    <input
+                      class="form-control"
+                      type="number"
+                      :value="pages"
+                      @keyup="updatePages"
+                      @change="updatePages"
+                      min = "0"
+                    />
+                    <button
+                      class="btn btn-primary btn-sm"
+                      type="button"
+                      @click="addPages(pages)"
+                    >
+                      +
+                    </button>
                   </div>
                 </div>
               </div>
               <div class="">
                 <div class="col text-muted">
                   <p>Words:</p>
-                  <p>275</p>
+                  <span>{{words}}</span>
                 </div>
               </div>
               <div class="">
                 <button type="submit" class="btn btn-success btn-sm">
-                  PROCEED:$10
+                  PROCEED:${{total}}
                 </button>
               </div>
             </div>
@@ -61,3 +80,56 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: "StartOrderForm",
+  data() {
+    return {
+      pages: 0,
+      maxPages: 999,
+      words: 0,
+      total: 0,
+    };
+  },
+  methods: {
+    updatePages(e) {
+      let value = e.target.value;
+      let page = this.setLimit(value);
+      this.pages = page;
+      this.updateWords(this.pages);
+      this.sumTotalPrice(this.pages);
+    },
+    addPages(currentPages) {
+      currentPages++;
+      let page = this.setLimit(currentPages);
+      this.pages = page;
+      this.updateWords(this.pages);
+      this.sumTotalPrice(this.pages);
+    },
+    reducePages(currentPages) {
+      currentPages--;
+      let page = this.setLimit(currentPages);
+      this.pages = page;
+      this.updateWords(this.pages);
+      this.sumTotalPrice(this.pages);
+    },
+    updateWords(pages) {
+      let singlePageWords = 275;
+      let totalWords = singlePageWords * pages;
+      this.words = totalWords;
+    },
+    sumTotalPrice(pages) {
+      let pricePerPage = 10;
+      let totalPrice = pages * pricePerPage;
+      this.total = totalPrice;
+    },
+    setLimit(pages) {
+      if (pages <= this.maxPages && pages >= 0) {
+        return pages;
+      }
+      return this.pages;
+    },
+  },
+};
+</script>
