@@ -14,21 +14,25 @@
               <div class="form-group">
                 <label for="academicLevel">Academic level</label><br />
                 <select class="form-control" aria-label="Default select">
-                  <option value="High School" selected>High School</option>
+                  <template v-for="(education, k) in educations">
+                    <option v-bind:key="k"  :value="education.level">{{education.level}}</option>
+                  </template>
                 </select>
               </div>
               <div class="form-group">
                 <label for="deadline">Deadline</label><br />
                 <select class="form-control" aria-label="Default select">
-                  <option value="14" selected>14 days</option>
+                  <template v-for="(duration, k) in durations">
+                    <option v-bind:key="k"  :value="duration.time">{{duration.time + " " + duration.timeUnit}}</option>
+                  </template>
                 </select>
               </div>
               <div class="form-group">
                 <label for="typeOfAssignment">Type of Assignment</label><br />
                 <select class="form-control" aria-label="Default select">
-                  <option value="Essay (any type)" selected>
-                    Essay (any type)
-                  </option>
+                  <template v-for="(assignment,k) in assignments">
+                    <option v-bind:key="k" :value="assignment.type">{{ assignment.type }}</option>
+                  </template>
                 </select>
               </div>
             </div>
@@ -82,10 +86,15 @@
 </template>
 
 <script>
+import { durations, assignments, educations } from "../content/content";
+
 export default {
   name: "StartOrderForm",
   data() {
     return {
+      durations: durations,
+      assignments: assignments,
+      educations: educations,
       pages: 0,
       maxPages: 999,
       words: 0,

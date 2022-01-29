@@ -1,0 +1,44 @@
+[
+    {
+        "time": "7",
+        "price": "",
+        "timeUnit": "day(s)",
+        "priceUnit": "$"
+    },
+    {
+        "time": "5",
+        "price": "",
+        "timeUnit": "day(s)",
+        "priceUnit": "$"
+    },
+    {
+        "time": "3",
+        "price": "",
+        "timeUnit": "day(s)",
+        "priceUnit": "$"
+    },
+    {
+        "time": "2",
+        "price": "",
+        "timeUnit": "day(s)",
+        "priceUnit": "$"
+    },
+    {
+        "time": "1",
+        "price": "",
+        "timeUnit": "day(s)",
+        "priceUnit": "$"
+    },
+    {
+        "time": "8",
+        "price": "",
+        "timeUnit": "hour(s)",
+        "priceUnit": "$"
+    },
+    {
+        "time": "3",
+        "price": "",
+        "timeUnit": "hour(s)",
+        "priceUnit": "$"
+    }
+]
