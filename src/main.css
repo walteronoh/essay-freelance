@@ -7,3 +7,25 @@ body {
     margin: auto;
     padding: .5rem 2.14rem;
 }
+
+.order-title {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.order-title:hover {
+    background-color: #ccc;
+}
+
+.level-title {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.level-title:hover {
+    background-color: #ccc;
+}
+
+.active {
+    background-color: #ccc;
+}

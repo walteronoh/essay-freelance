@@ -1,17 +1,22 @@
 [
     {
-        "level": "High school"
+        "level": "High school",
+        "initial": "HS"
     },
     {
-        "level": "College"
+        "level": "College",
+        "initial": "CG"
     },
     {
-        "level": "University"
+        "level": "University",
+        "initial": "UV"
     },
     {
-        "level": "Masters"
+        "level": "Masters",
+        "initial": "MS"
     },
     {
-        "level": "Ph.D"
+        "level": "Ph.D",
+        "initial": "PD"
     }
 ]

@@ -16,6 +16,7 @@ import RevisionPolicy from "../components/sections/footer/RevisionPolicy";
 import Prices from "../components/sections/sidenavigation/Prices";
 import Faq from "../components/sections/sidenavigation/Faq";
 import Contacts from "../components/sections/sidenavigation/Contacts";
+import Order from "../components/sections/sidenavigation/Order";
 
 Vue.use(VueRouter);
 
@@ -93,6 +94,11 @@ const routes = [{
         path: "/contacts",
         name: "Contacts",
         component: Contacts
+    },
+    {
+        path: "/order",
+        name: "Order",
+        component: Order
     }
 ];
 

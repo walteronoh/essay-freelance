@@ -1,6 +1,20 @@
 [
     {
-        "type": "Essay (any type)"
+        "type": "Essay (any type)",
+        "cases": [
+            {
+                "HS": [
+                    {
+                        "duration": "14",
+                        "timeUnit": "day(s)"
+                    },
+                    {
+                        "duration": "7",
+                        "timeUnit": "day(s)"
+                    }
+                ]
+            }
+        ]
     },
     {
         "type": "Admission essay"
